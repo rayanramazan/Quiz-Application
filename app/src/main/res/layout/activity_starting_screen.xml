@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".StartingScreenActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/akre"
+        android:alpha="0.4"
+
+        />
+
+    <TextView
+        android:id="@+id/text_view_highscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_start_quiz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:background="@null"
+        android:text="Highscore: 0"
+        android:textColor="@android:color/white"
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/button_start_quiz"
+        android:layout_width="240dp"
+        android:layout_height="33dp"
+        android:layout_centerInParent="true"
+        android:background="#C56A6A"
+        android:text="Start Quiz"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+
+    <Spinner
+        android:id="@+id/spinner_category"
+        android:layout_width="190dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/button_start_quiz"
+        android:layout_alignRight="@+id/button_start_quiz"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="9dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"></Spinner>
+
+    <Spinner
+        android:id="@+id/spinner_difficulty"
+        android:layout_width="190dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/spinner_category"
+        android:layout_alignRight="@+id/button_start_quiz"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="24dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"></Spinner>
+
+</RelativeLayout>
